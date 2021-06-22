@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import { theme } from '.';
+import { createGlobalStyle } from "styled-components";
+import { theme } from ".";
 
 export default createGlobalStyle`
   * {

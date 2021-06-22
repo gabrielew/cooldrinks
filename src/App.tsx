@@ -1,14 +1,12 @@
-import Routes from './routes';
-import { ThemeProvider } from 'styled-components';
-import { theme, GlobalStyle } from './themes';
+import { ThemeProvider } from "styled-components";
+import Routes from "./routes";
+import { theme, GlobalStyle } from "./themes";
 
-const App = () => {
-  return (
-    <ThemeProvider theme={theme}>
-      <Routes />
-      <GlobalStyle />
-    </ThemeProvider>
-  );
-};
+const App: React.FC = () => (
+  <ThemeProvider theme={theme}>
+    <Routes />
+    <GlobalStyle />
+  </ThemeProvider>
+);
 
 export default App;

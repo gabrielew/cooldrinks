@@ -1,6 +1,4 @@
-import * as S from './styles';
+import * as S from "./styles";
 
-const Home = () => {
-  return <S.Container />;
-};
+const Home: React.FC = () => <S.Container />;
 export default Home;
