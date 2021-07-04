@@ -23,6 +23,9 @@
   "plugins": ["react", "@typescript-eslint", "react-hooks"],
 
   "rules": {
+    "react/no-array-index-key": "off",
+    "react/prop-types": 0,
+    "@typescript-eslint/explicit-function-return-type": "off",
     "semi": ["error", "always"],
     "quotes": ["error", "double"],
     "no-trailing-spaces": "off",
@@ -37,8 +40,19 @@
         "ts": "never",
         "tsx": "never"
       }
-    ]
+    ],
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "camelcase": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/jsx-props-no-spreading": "off",
+    "class-methods-use-this": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "import/no-duplicates": "off",
+    "no-unused-expressions": "off",
+    "no-empty-interface": "off"
   },
+
   "settings": {
     "import/resolver": {
       "node": {
