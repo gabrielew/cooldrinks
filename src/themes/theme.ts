@@ -7,6 +7,7 @@ const theme = {
     primaryHover: "rgb(238 125 0 / 90%)",
     lightBlack: "rgb(0 0 0 / 10%)",
     lightOrange: "rgb(238 125 0 / 10%)",
+    mediumOrange: "rgb(238 125 0 / 30%)",
     border: "#f5f5f5",
     text: "#111111",
     gray: {

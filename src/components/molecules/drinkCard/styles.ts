@@ -14,17 +14,17 @@ export const Card = styled.div`
     height: 130px;
     padding: ${theme.spacings.small};
     margin: ${theme.spacings.small};
-    border: 1px solid ${theme.colors.border};
+    border: 2px solid ${theme.colors.lightOrange};
     border-radius: ${theme.borders.large};
     transition: box-shadow 0.5s;
     cursor: pointer;
 
     &:hover {
-      box-shadow: 0px 0px 10px 10px ${theme.colors.lightBlack};
+      box-shadow: 0px 0px 10px 10px ${theme.colors.mediumOrange};
     }
 
     @media(min-width: ${theme.screen.medium}) {
-      width: 300px;
+      width: 320px;
       height: 150px;
     }
 `}
@@ -57,7 +57,7 @@ export const Title = styled.p`
 
 export const Description = styled.p`
   ${({ theme }) => css`
-    color: ${theme.colors.gray.light};
+    color: ${theme.colors.gray.medium};
     font-size: ${theme.fonts.sizes.small};
   `}
 `;

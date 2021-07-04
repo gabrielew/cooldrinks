@@ -7,6 +7,7 @@ export const SearchWrapper = styled.div`
     margin-top: ${theme.spacings.small};
     width: 500px;
     height: 48px;
+    background: ${theme.colors.white};
     border-radius: ${theme.borders.medium};
     border: 1px solid ${theme.colors.border};
     line-height: 11px;
@@ -26,6 +27,7 @@ export const SearchInput = styled.input`
   ${({ theme }) => css`
     width: 100%;
     outline: none;
+    background: ${theme.colors.white};
     font-size: ${theme.fonts.sizes.large};
     color: ${theme.colors.gray.dark};
     border:none;

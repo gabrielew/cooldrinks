@@ -10,7 +10,7 @@ export default createGlobalStyle`
   }
 
   body {
-    background: ${theme.colors.background};
+    background: ${theme.colors.lightOrange};
     height: 100vh;
     width: 100vw;
     font: 400 16px 'Roboto', sans-serif;

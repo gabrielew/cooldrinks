@@ -15,14 +15,16 @@ export const Card = styled.div`
     border: 1px solid ${theme.colors.border};
     border-radius: ${theme.borders.large};
     margin: ${theme.spacings.small};
-    background: ${theme.colors.white};
+    background: ${theme.colors.lightOrange};
     cursor: pointer;
-    transition: box-shadow 0.5s;
     width: 260px;
     height: 48px;
+    transition: 0.5s;
+    opacity: 0.9;
 
     &:hover {
-      box-shadow: 0px 0px 5px 5px ${theme.colors.lightBlack};
+      box-shadow: 0px 0px 5px 5px ${theme.colors.mediumOrange};
+      opacity: 1;
     }
     @media(min-width: ${theme.screen.medium}) {
       width: 300px;
