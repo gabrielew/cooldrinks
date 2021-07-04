@@ -31,6 +31,7 @@ const Home: React.FC = () => {
   useLayoutEffect(() => {
     async function fetchDrinks() {
       if (!search.length) {
+        setError("");
         setDrinks([]);
       } else {
         const response = await api.get(`search.php?s=${search}`);
