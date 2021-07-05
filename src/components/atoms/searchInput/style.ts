@@ -5,7 +5,7 @@ export const SearchWrapper = styled.div`
     display: flex;
     align-items:center;
     margin-top: ${theme.spacings.small};
-    width: 500px;
+    width: 80%;
     height: 48px;
     background: ${theme.colors.white};
     border-radius: ${theme.borders.medium};
@@ -19,6 +19,10 @@ export const SearchWrapper = styled.div`
     }
     &:focus-within {
       box-shadow: 0px 0px 5px 5px ${theme.colors.lightBlack};
+    }
+
+    @media(min-width: ${theme.screen.medium}) {
+      width: 500px;
     }
   `}
 `;

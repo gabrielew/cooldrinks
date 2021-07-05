@@ -25,10 +25,13 @@ export default createGlobalStyle`
   }
 
   p {
-    font-size: ${theme.fonts.sizes.medium};
+    font-size: ${theme.fonts.sizes.small};
     font-weight: ${theme.fonts.weight.bold};
     font-family: ${theme.fonts.families.poppins};
     @media(min-width: ${theme.screen.medium}) {
+      font-size: ${theme.fonts.sizes.medium};
+    }
+    @media(min-width: ${theme.screen.large}) {
       font-size: ${theme.fonts.sizes.large};
     }
   }

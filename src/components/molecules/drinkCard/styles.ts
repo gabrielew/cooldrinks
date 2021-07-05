@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Card = styled.div`
   ${({ theme }) => css`
     display: flex;
-    width: 280px;
+    width: 260px;
     height: 130px;
     padding: ${theme.spacings.small};
     margin: ${theme.spacings.small};
@@ -24,6 +24,11 @@ export const Card = styled.div`
     }
 
     @media(min-width: ${theme.screen.medium}) {
+      width: 300px;
+      height: 150px;
+    }
+
+    @media(min-width: ${theme.screen.large}) {
       width: 320px;
       height: 150px;
     }
