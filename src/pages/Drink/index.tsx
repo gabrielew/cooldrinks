@@ -13,6 +13,7 @@ const Drink: React.FC = () => {
   const history = useHistory();
   const { idDrink } = useParams<{idDrink: string}>();
   const [isLoading, setIsLoading] = useState(true);
+  const [isImgLoading, setIsImgLoading] = useState(false);
   const [error, setError] = useState("");
   const [drink, setDrink] = useState<any>({});
   const [ingredients, setIngredients] = useState<Ingredient[]>([]);
@@ -42,6 +43,10 @@ const Drink: React.FC = () => {
     fetchDrink();
   }, [idDrink]);
 
+  function isImageLoaded() {
+    setIsImgLoading(true);
+  }
+
   return (
     <FullView isLoading={isLoading} backButton>
       {error ? (
@@ -54,7 +59,11 @@ const Drink: React.FC = () => {
           <Title title={`Drink ${drink.strDrink}`} />
           <S.Container>
             <S.Wrapper>
-              <S.DrinkImage src={drink.strDrinkThumb} alt={`${drink.strDrink}`} />
+              <S.DrinkImage
+                src={`${isImgLoading ? drink.strDrinkThumb : "/logo.svg"}`}
+                alt={`${drink.strDrink}`}
+                onLoad={isImageLoaded}
+              />
               <S.Description>
                 <S.DescriptionTitle>{`Type: ${drink.strAlcoholic}`}</S.DescriptionTitle>
                 <S.DescriptionTitle>
