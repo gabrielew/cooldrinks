@@ -1,5 +1,7 @@
 <h1 style="color:#EE7D00;">Cool Drinks Platform</h1>
 
+[Live server](https://cooldrinks-qccb9e9cn-gabrielew.vercel.app/)
+
 <p>This website can teach you how to make a delicious drink, with a few clicks!</p>
 
 #### How to run
